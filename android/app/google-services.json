@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "781132093501",
+    "project_id": "inventaris-warung",
+    "storage_bucket": "inventaris-warung.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:781132093501:android:43c7059f36176aa058f254",
+        "android_client_info": {
+          "package_name": "com.example.inventaris_warung"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-cR7Yl9HUPVPf4kWvnpv0A6t80TBNypk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

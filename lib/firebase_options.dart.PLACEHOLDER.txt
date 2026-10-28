@@ -1,0 +1,3 @@
+File ini akan DIGANTI oleh hasil `flutterfire configure`.
+Jangan buat manual. Setelah configure, file lib/firebase_options.dart muncul
+dan WAJIB di-commit ke GitHub (jangan masukkan ke .gitignore).
