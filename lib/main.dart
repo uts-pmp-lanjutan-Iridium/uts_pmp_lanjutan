@@ -3,7 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import 'firebase_options.dart';
+import 'providers/api_provider.dart';
 import 'providers/auth_provider.dart';
+import 'providers/item_provider.dart';
 import 'screens/home_screen.dart';
 import 'screens/login_screen.dart';
 import 'theme/app_theme.dart';
@@ -20,8 +22,10 @@ Future<void> main() async {
     MultiProvider(
       providers: [
         ChangeNotifierProvider(create: (_) => AuthProvider()),
-        // TODO: ChangeNotifierProvider(create: (_) => TransactionProvider()),
-        // TODO: ChangeNotifierProvider(create: (_) => ApiProvider()),
+        // P05 - Provider Firestore (collection 'items')
+        ChangeNotifierProvider(create: (_) => ItemProvider()),
+        // P03 - Provider Dio/REST (DummyJSON products)
+        ChangeNotifierProvider(create: (_) => ApiProvider()),
       ],
       child: const MyApp(),
     ),
