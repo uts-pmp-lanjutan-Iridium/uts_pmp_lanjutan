@@ -1,3 +1,4 @@
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class ItemModel {
@@ -16,7 +17,9 @@ class ItemModel {
   });
 
   // Mengubah DocumentSnapshot dari Firestore menjadi objek ItemModel (Dart)
-  factory ItemModel.fromFirestore(DocumentSnapshot<Map<String, dynamic>> doc) {
+  factory ItemModel.fromFirestore(
+    DocumentSnapshot<Map<String, dynamic>> doc,
+  ) {
     final data = doc.data() ?? {};
 
     return ItemModel(

@@ -1,3 +1,4 @@
+
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart' hide AuthProvider;
@@ -98,7 +99,9 @@ class AuthProvider extends ChangeNotifier {
   }
 
   String _pesanError(String code) {
-    if (code == 'user-not-found' || code == 'invalid-credential' || code == 'wrong-password') {
+    if (code == 'user-not-found' ||
+        code == 'invalid-credential' ||
+        code == 'wrong-password') {
       return 'Email atau password salah';
     } else if (code == 'email-already-in-use') {
       return 'Email sudah digunakan';
@@ -108,7 +111,8 @@ class AuthProvider extends ChangeNotifier {
       return 'Format email salah';
     } else if (code == 'user-disabled') {
       return 'Akun telah dinonaktifkan';
-    } else if (code == 'configuration-not-found' || code == 'operation-not-allowed') {
+    } else if (code == 'configuration-not-found' ||
+        code == 'operation-not-allowed') {
       return 'Auth belum aktif di console: enable Email/Password dulu';
     } else if (code == 'network-request-failed') {
       return 'Tidak ada koneksi internet';

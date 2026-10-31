@@ -11,7 +11,11 @@ class ApiService {
     ),
   );
 
+<<<<<<< HEAD
   // Menggunakan Future + Dio GET untuk mengambil referensi harga pasar (DummyJSON Products)
+=======
+ 
+>>>>>>> 57eb41e (Melanjutkan Firestore CRUD + Model/Service/Provider + ViewStatet)
   Future<List<ProductModel>> fetchMarketProducts() async {
     try {
       // Mengambil produk kategori groceries (sembako/kebutuhan warung)
@@ -30,10 +34,17 @@ class ApiService {
     } on DioException catch (e) {
       throw Exception(
         e.message ??
+<<<<<<< HEAD
             'Terjadi gangguan koneksi saat menghubungi server DummyJSON.',
       );
     } catch (e) {
       throw Exception('Terjadi kesalahan: $e');
+=======
+            'Terjadi gangguan koneksi saat menghubungi server ke DummyJSON.',
+      );
+    } catch (e) {
+      throw Exception('Terjadinya kesalahan: $e');
+>>>>>>> 57eb41e (Melanjutkan Firestore CRUD + Model/Service/Provider + ViewStatet)
     }
   }
 }
