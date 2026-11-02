@@ -121,4 +121,4 @@ flutter run
 
 ## Tautan Video Presentasi
 
-* **Google Drive**: [Tautan Video Presentasi Kelompok](https://drive.google.com/) *(Ganti dengan tautan Google Drive video kelompok Anda sebelum pengumpulan)*
+* **Google Drive**: [Tautan Video Presentasi Kelompok](https://drive.google.com/file/d/1y8LJM8lBoKNTPFO3juszniDS4qqvlncx/view?usp=sharing)
